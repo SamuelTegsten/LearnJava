@@ -3,7 +3,7 @@
 ## Documents from my learning :scroll:
 
 ### JavaBasics 
-From Hello World to making applications & games
+From Hello World to making applications & games :brain:
 
 ## Documents from my projects :books:
 
