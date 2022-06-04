@@ -8,4 +8,4 @@ From Hello World to making applications & games :brain:
 ## Documents from my projects :books:
 
 ## Scources for learning :bookmark:
-BROCODE ON YOUTUBE : https://www.youtube.com/c/BroCodez
+Brocode on Youtube : https://www.youtube.com/c/BroCodez :film_strip:
