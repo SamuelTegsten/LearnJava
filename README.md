@@ -2,7 +2,8 @@
 
 ## Documents from my learning :scroll:
 
-JavaBasics: from Hello World to making applications & games
+### JavaBasics 
+From Hello World to making applications & games
 
 ## Documents from my projects :books:
 
