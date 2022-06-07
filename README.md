@@ -5,6 +5,9 @@
 ### JavaBasics 
 From Hello World to making applications & games :brain:
 
+### JavaOO 
+Learning what Object Oriented means & the basics around it
+
 ## Documents from my projects :books:
 
 ## Scources for learning :bookmark:
