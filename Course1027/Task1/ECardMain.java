@@ -5,7 +5,7 @@ import Course1027.Föreläsning2.Card;
 public class ECardMain {
     public static void main(String[] args){
 
-        ECard c1 = new ECard(ECard.Rank.KING, ECard.Suit.CLUBS);
+        ECard c1 = new ECard(ECard.Rank.TWO, ECard.Suit.CLUBS);
         ECard c2 = new ECard(ECard.Rank.TWO, ECard.Suit.CLUBS);
 
         System.out.println(c1.toString());
@@ -14,9 +14,13 @@ public class ECardMain {
         if (c1.getRank() > c2.getRank()) {
             System.out.println(c1.toString()
                     + " has higher rank than " + c2.toString());
-        } else {
+        } else if(c1.getRank() < c2.getRank()) {
             System.out.println(c2.toString()
-                    + " has higher rank than " + c1.toString());
+                    + " has lower rank than " + c1.toString());
+        }
+        else{
+            System.out.println(c2.toString()
+                    + " has the same rank as " + c1.toString());
         }
 
         boolean isEqual = c1.equalsTo(c2);
