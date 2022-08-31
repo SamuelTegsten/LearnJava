@@ -1,15 +1,19 @@
 package Course1027.Task1;
 
+import java.util.Arrays;
+
 public class Queue {
     private String[] text;
     private static int i;
+    private static int size;
 
     public Queue(int size){
+        this.size = size;
         this.text = new String[size];
-        resize(size);
     }
     public Queue(){
-        this.text = new String[10];
+        this.i = 10;
+        this.text = new String[i];
     }
 
     public void size(){
@@ -17,7 +21,7 @@ public class Queue {
     }
 
     public boolean isEmpty(){
-        if(text.length == 0)
+        if(size == 0)
         {
             return true;
         }
@@ -29,12 +33,46 @@ public class Queue {
     public void enqueue(String input){
         text[i] = input;
         i++;
+        resize();
     }
 
-    private void resize(int size){
-        if(this.i == size){
-            text = new String[size * 2];
+    public String dequeue(){
+
+        String dequeued = text[0];
+        for(int j = 0; j < size - 1; j++){
+            text[j] = text[j + 1];
+        }
+
+        size--;
+        i--;
+        String[] oldQueue = text;
+        text = new String[size];
+        for(int j = 0; j < i; j++){
+            text[j] = oldQueue[j];
+        }
+        return dequeued;
+    }
+
+    private void resize(){
+        if(i == size){
+            String[] oldQueue = text;
+            size *= 2;
+            text = new String[size];
+            for(int j = 0; j < i; j++){
+                text[j] = oldQueue[j];
+            }
         }
     }
 
+    public String[] getText() {
+        return text;
+    }
+
+    @Override
+    public String toString() {
+        return " Queue {" +
+                Arrays.toString(text) + " " +
+                "Size of the Queue: " + size + " " +
+                '}';
+    }
 }
