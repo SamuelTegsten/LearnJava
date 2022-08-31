@@ -64,6 +64,14 @@ public class Queue {
         }
     }
 
+    public String peek(){
+        return text[0];
+    }
+
+    public String getAll(){
+        return Arrays.toString(text);
+    }
+
     public String[] getText() {
         return text;
     }

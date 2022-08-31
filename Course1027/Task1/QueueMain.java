@@ -17,5 +17,16 @@ public class QueueMain {
 
         String s = q.dequeue();
         System.out.println("Dequeued: " + s);
+
+        String a = q.peek();
+        System.out.println("Peeking: " + a);
+        String list = q.getAll();
+        System.out.println("Current Queue: " + list);
+
+        while(!q.isEmpty()) {
+            System.out.println(q.dequeue());
+        }
+        System.out.println(q.toString());
+
     }
 }

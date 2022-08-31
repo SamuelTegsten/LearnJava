@@ -6,14 +6,16 @@ public class ECard {
 
     public enum Rank {ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, BISHOP, QUEEN, KING};
     public enum Suit {HEARTS, SPADES, DIAMONDS, CLUBS};
-
-
     private Rank rank;
     private Suit suit;
 
     public ECard(Rank rank , Suit suit){
         this.rank = rank;
         this.suit = suit;
+    }
+
+    public boolean equalsTo(ECard compare){
+        return rank == compare.rank && suit == compare.suit;
     }
 
     public int getRank() {
@@ -26,9 +28,9 @@ public class ECard {
 
     @Override
     public String toString() {
-        return " ECard { " +
-                " suit = " + suit +
-                ", rank = " + rank +
-                '}';
+        return "ECard {" +
+                " " + suit +
+                " " + rank +
+                " " + '}';
     }
 }
